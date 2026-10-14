@@ -1,0 +1,267 @@
+/* =========================
+   MAIN NAVBAR
+========================= */
+
+.book-navbar {
+  background: #ffffff !important;
+
+  border-bottom: 1px solid #eeeeee;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+
+  padding: 12px 0;
+
+  z-index: 1000;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.book-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none !important;
+
+  transition: 0.3s ease;
+}
+
+.book-brand:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Book Icon */
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #077fff,
+    #0073ff
+  );
+
+  font-size: 23px;
+
+  box-shadow:
+    0 5px 15px rgba(255, 193, 7, 0.25);
+}
+
+
+/* Brand Text */
+
+.brand-text {
+  font-size: 24px;
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+.brand-main {
+  color: #222222;
+}
+
+.brand-highlight {
+  color: #0099e0;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.book-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-nav .nav-link {
+  color: #444444 !important;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  padding: 10px 16px !important;
+
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+
+  position: relative;
+}
+
+
+/* Hover */
+
+.book-nav .nav-link:hover {
+  color: #d89100 !important;
+
+  background: #fff8e6;
+
+  transform: translateY(-2px);
+}
+
+
+/* Golden underline */
+
+.book-nav .nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  width: 0;
+  height: 2px;
+
+  left: 50%;
+  bottom: 3px;
+
+  transform: translateX(-50%);
+
+  background: #ffc107;
+
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+}
+
+.book-nav .nav-link:hover::after {
+  width: 40%;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-wrapper {
+  margin-left: 15px;
+}
+
+.login-btn {
+  border: none !important;
+  padding: 10px 23px !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  color: #3b2a00 !important;
+  background: linear-gradient(
+    135deg,
+    #4f90ff,
+    #0066ff
+  ) !important;
+
+  box-shadow:
+    0 5px 15px rgba(255, 193, 7, 0.25);
+
+  transition: all 0.3s ease !important;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 22px rgba(255, 193, 7, 0.35);
+}
+
+
+/* =========================
+   MOBILE TOGGLE
+========================= */
+
+.custom-toggler {
+  border: 1px solid #e5e5e5 !important;
+
+  border-radius: 9px !important;
+
+  padding: 7px 10px !important;
+}
+
+.custom-toggler:focus {
+  box-shadow:
+    0 0 0 3px rgba(255, 193, 7, 0.2) !important;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+  .book-navbar {
+    padding: 10px 0;
+  }
+
+  .book-nav {
+    display: block;
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background: #fafafa;
+
+    border: 1px solid #eeeeee;
+  }
+
+  .book-nav .nav-link {
+    text-align: center;
+
+    margin: 3px 0;
+
+    padding: 12px !important;
+  }
+
+  .book-nav .nav-link:hover {
+    background: #fff8e6;
+  }
+
+  .book-nav .nav-link::after {
+    display: none;
+  }
+
+  .login-wrapper {
+    margin: 15px 0 5px;
+
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .login-btn {
+    width: 160px;
+  }
+}
+
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 480px) {
+
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 20px;
+  }
+
+  .brand-text {
+    font-size: 21px;
+  }
+}
