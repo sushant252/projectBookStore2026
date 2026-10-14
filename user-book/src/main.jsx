@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './NavBar'
 import HomeCard from './HomeCard.jsx'
 import Cart from './Cart.jsx'
+import CheckOut from './CheckOut.jsx'
 // import Footer from './Footer.jsx'
 import BookDetail from './BookDetail.jsx';
 import { Provider } from  'react-redux';
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
    <Route path='/' element={<HomeCard></HomeCard>}/>
    <Route path='/user/book/detail/:id' element={<BookDetail></BookDetail>}/>
    <Route path='/cart' element ={<Cart></Cart>}></Route>
+   <Route path='/CheckOut' element={<CheckOut></CheckOut>} ></Route>
  </Routes>
     
   {/* <Footer></Footer> */}
